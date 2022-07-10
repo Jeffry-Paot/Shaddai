@@ -1,0 +1,18 @@
+/*Resolucion de barra de navegación*/
+@media screen and (max-width:769px ) {
+	nav .navbar {
+		display: none;
+        position: fixed;
+	}
+}
+@media screen and (min-width:769px ) {
+	.openbtn {
+        position: fixed;
+		display: none;
+
+	}
+
+    #mySidepanel{
+        display: none;
+    }
+}
