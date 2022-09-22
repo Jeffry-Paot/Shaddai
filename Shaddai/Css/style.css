@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Asap', sans-serif;
+  }
+
+:root{
+  --main-color:#0069c0;
+  --second-color: #137fd9;
+  --Hover-color:#5e6266;
+  
+}
+
+Body{
+    overflow-x: hidden;  
+    z-index: 2;  
+}
+
+/*Barra de navegación*/
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.navbar img{
+    width: 30%;
+    height: 10%;
+}
+.navbar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--main-color);
+  }
+  
+  .navbar a {
+    margin-top: -10px;
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+  }
+  .navbar a:hover {
+    color: var(--Hover-color);
+
+  }
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin-top: -11px;
+  }
+  
+  .subnav-content {
+    padding-top: 10px;
+    height: 44px;
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: var(--second-color);
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .subnav-content a:hover {
+    background-color: var(--second-color);
+    color: var(--Hover-color);
+  }
+
+  
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+
+/*Barra de navegacion 2*/
+.sidepanel {
+    z-index: 2;
+    height: 100%; 
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+    overflow-x: hidden; 
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+  
+  #mySidepanel a:hover{
+    color: var(--Hover-color);
+  }
+
+  #mySidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    left: 62%;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    text-align: left;
+    width: 100%;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: var(--Hover-color);
+  }
+
+    #mySidepanel a, .dropdown-btn {
+    z-index: 4;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .mySidenav a:hover {
+    color: var(--main-color);
+  }
+
+  button.dropdown-btn:hover{
+    color: var(--Hover-color);
+  }
+
+  #mySidepanel a, .dropdown-btn1 {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+
+  button.dropdown-btn1:hover{
+    color: var(--Hover-color);
+  }
+
+  #dropdown-container {
+    display: none;
+    background-color: var(--second-color);
+    padding-left: 8px;
+  }
+  
+  #dropdown-container1 {
+    display: none;
+    background-color: var(--second-color);
+    padding-left: 8px;
+  }
+  
+  #mySidepaenl .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+
+/*Cuerpo*/
+/*Section 1*/
+
+#Banner1{
+  z-index: 0;
+  position: relative;
+  border-radius: 20px 20px 20px 20px;
+  margin-bottom: 20px;
+  margin-right: 2em;
+}
+
+#Banner1 .Banner11{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  border-radius:20px 20px 20px 20px;
+  background-color: #e2e2e2;
+  -webkit-border-radius:20px 20px 20px 20px;
+  -moz-border-radius:20px 20px 20px 20px;
+  -ms-border-radius:20px 20px 20px 20px;
+  -o-border-radius:20px 20px 20px 20px;
+}
+
+.Bannerfill {
+  width: 100%;
+  max-width: 300px;
+  max-height: 600px;
+  margin: 0 auto;
+  }
+
+  .Banner11 img {
+    width: 100%;
+    height: 100%;
+  }
+
+ .Span1{
+   z-index: 5;
+    position: relative;
+    background-color: #e2e2e2;
+    border-radius:20px 20px 0px 0px ;
+    width: 100%;
+    height: 20%;
+}
+
+ .Span1 span{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font-size: 40px;
+
+}
+
+.Span1 a{
+  position: absolute;
+  left: 10%;
+  top: 60%;
+  background-color: transparent;
+  color: var(--second-color);
+  border-style: none;
+  border-radius: 20px;
+  padding: 6px 20px 6px 20px;
+ border: 2px solid var(--second-color);
+ text-decoration: none;
+}
+
+.Span1 a:hover{
+  background-color: var(--second-color);
+  color: #fff;
+}
+
+#Banner2{
+  position: relative;
+  z-index: 0;
+  height: 360px;
+  border-radius: 20px 20px 20px 20px;
+  margin-bottom: 20px;
+  background-color: #e2e2e2;
+}
+
+.Span2{
+  z-index: 0;
+  border-radius:20px 20px 20px 20px ;
+  width: 0;
+  height: 0;
+background-color: #fff;
+}
+
+.Bannerfill1 {
+  z-index: -2;
+  width: 100%;
+  max-width: 340px;
+  max-height: 340px;
+  margin: 0 auto;
+  }
+
+  .Bannerfill1 img {
+    width: 100%;
+    height: 100%;
+  }
+
+.Span2 span{
+ position: absolute;
+ top: 2%;
+ left: 10%;
+ font-size: 40px;
+
+}
+
+.Span2 a{
+ position: absolute;
+ left: 10%;
+ top: 25%;
+ background-color: transparent;
+ color: var(--second-color);
+ border-style: none;
+ border-radius: 20px;
+ padding: 6px 20px 6px 20px;
+ border: 2px solid var(--second-color);
+ text-decoration: none;
+}
+
+.Span2 a:hover{
+ background-color: var(--second-color);
+ color: #fff;
+}
+
+#Banner3{
+  position: relative;
+  z-index: 0;
+  border-radius: 20px 20px 20px 20px;
+  margin-bottom: 20px;
+  background-color: #e2e2e2;
+}
+
+.Span3{
+  z-index: 0;
+  border-radius:20px 20px 20px 20px ;
+  width: 0;
+  height: 0;
+background-color: #fff;
+}
+
+.Bannerfill2 {
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  max-height: 380px;
+  margin: 0 auto;
+  }
+
+  .Bannerfill2 img {
+    width: 100%;
+    height: 100%;
+  }
+
+.Span3 span{
+ position: absolute;
+ top: 2%;
+ left: 10%;
+ font-size: 40px;
+
+}
+
+.Span3 a{
+ position: absolute;
+ left: 10%;
+ top: 22%;
+ background-color: transparent;
+ color: var(--second-color);
+ border-style: none;
+ border-radius: 20px;
+ padding: 6px 20px 6px 20px;
+border: 2px solid var(--second-color);
+text-decoration: none;
+}
+
+.Span3 a:hover{
+ background-color: var(--second-color);
+ color: #fff;
+}
+
+.linea {
+  border-top: 1px solid black;
+  height: 2px;
+  padding: 0;
+  margin: 2px auto 20px auto;
+}
+
+/*Section 2*/
+.N2 .Desc a{
+  text-decoration: none;
+  color: var(--Hover-color);
+}
+
+.N2 .Desc a:hover{
+  color: black;
+}
+
+.N2 #Accesorios a{
+  font-size: 18px ;
+  text-decoration: none;
+  color: var(--Hover-color);
+}
+
+.N2 #Accesorios a:hover{
+  color: black;
+}
+
+.N2 #Accesorios .AccesoriosDesc  p{
+  text-align: center;
+  font-size: 20px;
+}
+/*Section 3*/
+.N2 
+
+.CajaProductos a{
+  font-size: 18px ;
+  text-decoration: none;
+  color: var(--Hover-color);
+}
+
+.CajaProductos a:hover{
+  color: black;
+}
+
+#Cel-popular .Clasif{
+  color: rgb(156, 156, 156);
+  font-size: 16px;
+}
+
+#Cel-nuevo .Clasif{
+  color: rgb(156, 156, 156);
+  font-size: 16px;
+}
+
+#Celular .Clasif{
+  color: rgb(156, 156, 156);
+  font-size: 16px;
+}
+
+.Relacionado .Clasif{
+  color: rgb(156, 156, 156);
+  font-size: 16px;
+}
+
+#Abs-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#Nav-desc a{
+  font-size: 20px ;
+  text-decoration: none;
+  color: var(--Hover-color);
+}
+
+#Nav-desc a:hover{
+  color: black;
+}
+
+#Desc .tit-desc {
+  font-size: 26px ;
+  color: black;
+}
+
+#Desc a{
+  color: var(--Hover-color);
+  font-size: 16px;
+}
+
+#Desc a:hover{
+  color: black;
+}
+
+.Desc a{
+  text-decoration: none;
+  color: var(--Hover-color);
+  font-size: 16px;
+}
+
+.Desc a:hover{
+  color: black;
+}
+
+#specs-list .ttl{
+  font-size: 14px;
+  width: 160px;
+  color: black;
+}
+
+#specs-list .info{
+  font-size: 14px;
+  padding-left: 2rem;
+  width: 1000px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#specs-list .col{
+    width: 130px;
+    color: black;
+    font-size: 14px;
+}
+
+#specs-list .sep{
+  border-top: 1px solid var(--Hover-color) ;
+}
+
+.Colores, .color .circulo {
+  width: 40px;
+  height: 40px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
